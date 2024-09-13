@@ -1,0 +1,86 @@
+
+Hide Streamlit default elements 
+#MainMenu {visibility: hidden;}
+header {visibility: hidden;}
+footer {visibility: hidden;} 
+
+
+
+/* Night theme background */
+[data-testid="stAppViewContainer"] > .main {
+    position: relative;
+    background: linear-gradient(180deg, #001133, #000011); /* Slightly lighter top */
+    min-height: 100vh;
+    overflow-y: auto;
+    padding-bottom: 50px;
+    transition: background 1.5s ease; /* Smooth background transition */
+}
+
+/* Falling line animation */
+@keyframes fall {
+    0% {
+        transform: translateY(-100%) scaleX(1);
+        opacity: 0;
+    }
+    30% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(120%) scaleX(0.7); /* Slight tapering effect */
+        opacity: 0;
+    }
+}
+
+/* Glowing rain-like lines */
+.glowing-line {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 30vh; /* Longer lines for better effect */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), transparent); /* Gradient for tapering */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.9), 0 0 20px rgba(255, 255, 255, 0.6);
+    animation: fall 3s linear infinite; /* Slower and smoother animation */
+    opacity: 0.9;
+    filter: blur(1px); /* Slight blur for softness */
+}
+
+/* Generate multiple glowing lines with varied positions and durations */
+.glowing-line:nth-child(1) {
+    left: 3%;
+    animation-duration: 2.5s;
+}
+.glowing-line:nth-child(2) {
+    left: 12%;
+    animation-duration: 3.2s;
+}
+.glowing-line:nth-child(3) {
+    left: 20%;
+    animation-duration: 2.7s;
+}
+.glowing-line:nth-child(4) {
+    left: 33%;
+    animation-duration: 2.9s;
+}
+.glowing-line:nth-child(5) {
+    left: 50%;
+    animation-duration: 3.5s;
+}
+.glowing-line:nth-child(6) {
+    left: 70%;
+    animation-duration: 3s;
+}
+.glowing-line:nth-child(7) {
+    left: 85%;
+    animation-duration: 2.6s;
+}
+
+/* Fade-in background animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Apply fade-in effect to background */
+[data-testid="stAppViewContainer"] > .main {
+    animation: fadeIn 2s ease-in-out;
+}
