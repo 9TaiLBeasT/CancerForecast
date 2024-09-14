@@ -36,7 +36,7 @@ def main():
 
     
     About_page = st.Page("about_page.py", title="About", icon="ℹ️", default=True)
-    ALL_page = st.Page(".\ALL\ALL_page.py", title="Acute Lymphoblastic Leukemia")
+    ALL_page = st.Page(".\\ALL\\ALL_page.py", title="Acute Lymphoblastic Leukemia")
     Brain_Cancer_page = st.Page(".\\brain_cancer\\brain_cancer_page.py", title="Brain Cancer")
     Breast_Cancer_page = st.Page(".\\breast_cancer\\breast_cancer_page.py", title="Breast Cancer")
     Cervical_Cancer_page = st.Page(".\cervical_cancer\cervical_cancer_page.py", title="Cervical Cancer")
