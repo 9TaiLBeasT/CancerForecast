@@ -35,7 +35,7 @@ def main():
     )
 
     
-    st.logo(".\\assets\\img1.png")
+    st.logo(".\\assets\\img2.png")
     
     About_page = st.Page("about_page.py", title="About", icon="ℹ️", default=True)
     ALL_page = st.Page(".\ALL\ALL_page.py", title="Acute Lymphoblastic Leukemia")
