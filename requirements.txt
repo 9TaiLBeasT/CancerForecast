@@ -23,7 +23,7 @@ Jinja2==3.1.4
 joblib==1.4.2
 jsonschema==4.23.0
 jsonschema-specifications==2023.12.1
-keras==3.6.0  # Latest version compatible with Python 3.12
+keras==3.5.0  # Updated to match available version
 kiwisolver==1.4.7
 libclang==18.1.1
 Markdown==3.7
@@ -61,9 +61,9 @@ smmap==5.0.1
 streamlit==1.38.0
 streamlit-searchbox==0.1.16
 tenacity==8.5.0
-tensorboard==2.18.0  # Updated for Python 3.12
+tensorboard==2.18.0 
 tensorboard-data-server==0.7.2
-tensorflow==2.18.0  # Compatible with Python 3.12
+tensorflow==2.18.0  
 termcolor==2.4.0
 threadpoolctl==3.5.0
 toml==0.10.2
@@ -75,4 +75,3 @@ watchdog==4.0.2
 Werkzeug==3.0.4
 wheel==0.44.0
 wrapt==1.16.1  
-
