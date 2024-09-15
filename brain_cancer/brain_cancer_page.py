@@ -54,7 +54,7 @@ def preprocess_image(image, target_size=(256, 256)):
 tabs = st.tabs(["Prediction", "Help"])
 
 # Load the model
-model = tf.keras.models.load_model('.\\brain_cancer\\BrainCancer_model.h5')
+model = tf.keras.models.load_model('./brain_cancer/BrainCancer_model.h5')
 
 CLASS_NAMES = ['Glioma', 'Meningioma', 'Pituitary Tumor']
 
@@ -141,5 +141,5 @@ with tabs[1]:
 
     st.markdown("<h3 style='color: #F0FFFF;'>Examples of Acceptable Images</h3>", unsafe_allow_html=True)
 
-    st.image(".\\brain_cancer\\brain_glioma.jpg", use_column_width=True)
+    st.image("./brain_cancer/brain_glioma.jpg", use_column_width=True)
     

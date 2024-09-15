@@ -57,7 +57,7 @@ def preprocess_image(image, target_size=(256, 256)):
 tabs = st.tabs(["Prediction", "Help"])
 
 # Load the model
-model = tf.keras.models.load_model('.\ALL\ALL_model.h5')
+model = tf.keras.models.load_model('./ALL/ALL_model.h5')
 
 CLASS_NAMES = ['Benign', 'Early', 'Pre', 'Pro']
 
@@ -148,6 +148,6 @@ with tabs[1]:
     st.markdown("<h3 style='color: #F0FFFF;'>Examples of Acceptable Images</h3>", unsafe_allow_html=True)
 
     # Add images here with the correct paths
-    st.image(".\\ALL\\all_pro.jpg", use_column_width=True)
+    st.image("./ALL/all_pro.jpg", use_column_width=True)
  
 

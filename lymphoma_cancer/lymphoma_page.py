@@ -54,7 +54,7 @@ def preprocess_image(image, target_size=(256, 256)):
 tabs = st.tabs(["Prediction", "Help"])
 
 # Load the model
-model = tf.keras.models.load_model('.\\lymphoma_cancer\\LymphomaCancer_model.h5')
+model = tf.keras.models.load_model('./lymphoma_cancer/LymphomaCancer_model.h5')
 
 # Class names and explanations
 CLASS_NAMES = ['Chronic Lymphocytic Leukemia', 'Follicular Lymphoma', 'Mantle Cell Lymphoma']
@@ -142,4 +142,4 @@ with tabs[1]:
     st.markdown("<h3 style='color: #F0FFFF;'>Examples of Acceptable Images</h3>", unsafe_allow_html=True)
 
     # Add images here with the correct paths
-    st.image(".\\lymphoma_cancer\\lymph.jpg", use_column_width=True)
+    st.image("./lymphoma_cancer/lymph.jpg", use_column_width=True)

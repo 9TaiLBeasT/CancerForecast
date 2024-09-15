@@ -54,9 +54,9 @@ def preprocess_image(image, target_size=(256, 256)):
     return image
 
 # Load the models
-image_model = tf.keras.models.load_model('.\\breast_cancer\\BreastCancer_model.h5')
-value_model = pickle.load(open(".\\breast_cancer\\Breast_csv_model.pkl", "rb"))
-scaler = pickle.load(open(".\\scalar.pkl", "rb"))
+image_model = tf.keras.models.load_model('./breast_cancer/BreastCancer_model.h5')
+value_model = pickle.load(open("./breast_cancer/Breast_csv_model.pkl", "rb"))
+scaler = pickle.load(open("./scalar.pkl", "rb"))
 
 # Class names and explanations for image prediction
 CLASS_NAMES = ['Benign', 'Malignant']
@@ -278,4 +278,4 @@ with main_tabs[1]:
 
     st.markdown("<h3 style='color: #F0FFFF;'>Examples of Acceptable Images</h3>", unsafe_allow_html=True)
 
-    st.image(".\\breast_cancer\\breast_cancer.jpg", use_column_width=True)
+    st.image("./breast_cancer/breast_cancer.jpg", use_column_width=True)

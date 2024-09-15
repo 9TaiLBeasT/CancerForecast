@@ -54,7 +54,7 @@ def preprocess_image(image, target_size=(256, 256)):
     return image
 
 # Load the model
-model = tf.keras.models.load_model('.\\lung_colon_cancer\\LungColonCancer_model.h5')
+model = tf.keras.models.load_model('./lung_colon_cancer/LungColonCancer_model.h5')
 
 # Class names and explanations
 CLASS_NAMES = ['Colon Adenocarcinoma', 'Colon Benign Tissue', 'Lung Adenocarcinoma', 'Lung Benign Tissue', 'Lung Squamous Cell Carcinoma']
@@ -279,7 +279,7 @@ with main_tabs[0]:
                 scaler = scaler.fit_transform(user_input)
 
                 # Load the prediction model
-                with open('.\\lung_colon_cancer\\lungcsvmodel.pkl', 'rb') as file:
+                with open('./lung_colon_cancer/lungcsvmodel.pkl', 'rb') as file:
                     prediction_model = pickle.load(file)
 
                 # Make a prediction
@@ -360,4 +360,4 @@ with main_tabs[1]:
     st.markdown("<h3 style='color: #F0FFFF;'>Examples of Acceptable Images</h3>", unsafe_allow_html=True)
 
         # Add images here with the correct paths
-    st.image(".\\lung_colon_cancer\\lung_bnt_0006.jpg", use_column_width=True)
+    st.image("./lung_colon_cancer/lung_bnt_0006.jpg", use_column_width=True)
