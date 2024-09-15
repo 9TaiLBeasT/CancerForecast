@@ -28,7 +28,7 @@ def searchbox(pages):
 
 def main():
     st.set_page_config(page_title="Cancer Forecast", 
-                       page_icon=".\\assets\\logo.png", layout="wide", 
+                       page_icon="./assets/logo.png", layout="wide", 
                        initial_sidebar_state="auto",
                        menu_items={'About': "# This is a header. This is an *extremely* cool cancer prediction app!"
         }
